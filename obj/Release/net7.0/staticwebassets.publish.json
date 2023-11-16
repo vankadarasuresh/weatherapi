@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "2F1FIwNzp7EFf7FMs4RjGrAdaebHW8z9DWn6Q+zDOpU=",
+  "Source": "weatherapi",
+  "BasePath": "_content/weatherapi",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

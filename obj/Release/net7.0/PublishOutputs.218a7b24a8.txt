@@ -1,0 +1,12 @@
+/Users/sureshvankadara/Downloads/Azure-Ppt/weatherapi/bin/Release/net7.0/publish/weatherapi
+/Users/sureshvankadara/Downloads/Azure-Ppt/weatherapi/bin/Release/net7.0/publish/appsettings.Development.json
+/Users/sureshvankadara/Downloads/Azure-Ppt/weatherapi/bin/Release/net7.0/publish/appsettings.json
+/Users/sureshvankadara/Downloads/Azure-Ppt/weatherapi/bin/Release/net7.0/publish/weatherapi.dll
+/Users/sureshvankadara/Downloads/Azure-Ppt/weatherapi/bin/Release/net7.0/publish/weatherapi.deps.json
+/Users/sureshvankadara/Downloads/Azure-Ppt/weatherapi/bin/Release/net7.0/publish/weatherapi.runtimeconfig.json
+/Users/sureshvankadara/Downloads/Azure-Ppt/weatherapi/bin/Release/net7.0/publish/weatherapi.pdb
+/Users/sureshvankadara/Downloads/Azure-Ppt/weatherapi/bin/Release/net7.0/publish/Microsoft.AspNetCore.OpenApi.dll
+/Users/sureshvankadara/Downloads/Azure-Ppt/weatherapi/bin/Release/net7.0/publish/Microsoft.OpenApi.dll
+/Users/sureshvankadara/Downloads/Azure-Ppt/weatherapi/bin/Release/net7.0/publish/Swashbuckle.AspNetCore.Swagger.dll
+/Users/sureshvankadara/Downloads/Azure-Ppt/weatherapi/bin/Release/net7.0/publish/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/sureshvankadara/Downloads/Azure-Ppt/weatherapi/bin/Release/net7.0/publish/Swashbuckle.AspNetCore.SwaggerUI.dll
