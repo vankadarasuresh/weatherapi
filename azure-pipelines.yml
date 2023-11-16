@@ -24,9 +24,9 @@ stages:
       displayName: BuildandPushimage
       inputs:
         containerRegistry: 'dockerhub'
-        repository: 'weatherapi'
+        repository: 'svankad/azurebuild'
         command: buildAndPush
-        dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
+        dockerfile: '**/Dockerfile'
         tags: |
           $(tag)
 
