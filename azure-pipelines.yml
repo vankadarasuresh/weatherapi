@@ -24,7 +24,7 @@ stages:
       displayName: BuildandPushimage
       inputs:
         containerRegistry: 'dockerhub'
-        repository: 'weatherapii'
+        repository: 'svankad\weatherapi'
         command: buildAndPush
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
         tags: |
