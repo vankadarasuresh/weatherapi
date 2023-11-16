@@ -12,7 +12,7 @@ variables:
   tag: '$(Build.BuildId)'
 
 stages:
-- stage: Build & Push
+- stage: Buildandpush
   displayName: Build image
   jobs:
   - job: Build
@@ -21,7 +21,7 @@ stages:
       vmImage: ubuntu-latest
     steps:
     - task: Docker@2
-      displayName: Build and Push image
+      displayName: BuildandPushimage
       inputs:
         containerRegistry: 'dockerhub'
         repository: 'weatherapii'
