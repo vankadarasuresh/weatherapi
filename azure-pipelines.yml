@@ -21,8 +21,10 @@ stages:
       vmImage: ubuntu-latest
     steps:
     - task: Docker@2
-      displayName: Build an image
+      displayName: Build and Push image
       inputs:
+        containerRegistry: 'dockerhub'
+        repository: 'weatherapii'
         command: buildAndPush
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
         tags: |
