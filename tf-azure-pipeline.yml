@@ -29,11 +29,11 @@ stages:
         tags: |
           $(tag)
 - stage: tfProvision
-  displayname: Azure Terraform
+  displayName: Azure Terraform
   dependsOn: Build
   jobs:
   - job: Provision
-    displayname: container instance to deploy image
+    displayName: container instance to deploy image
     pool:
       vmImage: ubuntu-latest
     variables:
@@ -44,7 +44,7 @@ stages:
         terraform init -input=false
         terraform apply -input=false -auto-approve
       name: runningterraform
-      displayname: terraform running
+      displayName: terraform running
       env:
         ARM_CLIENT_ID: $(ARM_CLIENT_ID)
         ARM_CLIENT_SECRET: $(ARM_CLIENT_SECRET)
