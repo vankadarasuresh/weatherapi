@@ -28,4 +28,25 @@ stages:
         Dockerfile: '**/Dockerfile'
         tags: |
           $(tag)
-
+- stage: tfProvision
+  displayname: Azure Terraform
+  dependsOn: Build
+  jobs:
+  - job: Provision
+    displayname: container instance to deploy image
+    pool:
+      vmImage: ubuntu-latest
+    variables:
+    - group: tf-vars
+    steps:
+    - script: |
+        set -e
+        terraform init -input=false
+        terraform apply -input=false -auto-approve
+      name: runningterraform
+      displayname: terraform running
+      env:
+        ARM_CLIENT_ID: $(ARM_CLIENT_ID)
+        ARM_CLIENT_SECRET: $(ARM_CLIENT_SECRET)
+        ARM_TENANT_ID: $(ARM_TENANT_ID)
+        ARM_SUBSCRIPTION_ID: $(ARM_SUBSCRIPTION_ID)
