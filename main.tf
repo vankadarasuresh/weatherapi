@@ -21,6 +21,11 @@ provider "azurerm" {
       }
 }
 
+variable "imagebuild" {
+  type        = string
+  description = "Latest Image Build"
+}
+
 
 resource "azurerm_resource_group" "tfexample" {
   name     = "tf-pp-rg"
@@ -37,7 +42,7 @@ resource "azurerm_container_group" "tfexample_cotainer_group" {
 
   container {
     name   = "weather"
-    image  = "svankad/azurebuild:53"
+    image  = "svankad/azurebuild:${var.imagebuild}"
     cpu    = "0.5"
     memory = "1.5"
 
