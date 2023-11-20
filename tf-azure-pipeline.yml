@@ -12,6 +12,13 @@ variables:
   tag: '$(Build.BuildId)'
 
 stages:
+- stage: Static Code Analysis
+  jobs:
+  - job: 
+    displayName: Code Coverage
+    steps:
+    - script: echo simulate running your analysis!
+      displayName: 'Code Coverages'
 - stage: Build
   displayName: Build image
   jobs:
@@ -29,7 +36,7 @@ stages:
         tags: |
           $(tag)
 - stage: tfProvision
-  displayName: Azure Terraform
+  displayName: Terraform Provision and Deploy
   dependsOn: Build
   jobs:
   - job: Provision
@@ -44,7 +51,7 @@ stages:
         terraform init -input=false
         terraform apply -input=false -auto-approve
       name: runningterraform
-      displayName: terraform running
+      displayName: terraform stage
       env:
         ARM_CLIENT_ID: $(ARM_CLIENT_ID)
         ARM_CLIENT_SECRET: $(ARM_CLIENT_SECRET)
