@@ -37,7 +37,7 @@ resource "azurerm_container_group" "tfexample_cotainer_group" {
 
   container {
     name   = "weather"
-    image  = "svankad/azurebuild:13"
+    image  = "svankad/azurebuild:51"
     cpu    = "0.5"
     memory = "1.5"
 
